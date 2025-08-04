@@ -19,16 +19,16 @@ function Navbar () {
                 </li>
                 <div className='navigation-links'>
                     <li>
-                        <a href="/" className={darkMode ? 'Light' : 'Dark'}>HOME</a>
+                        <a href="/" className={darkMode ? 'light' : 'dark'}>HOME</a>
                     </li>
                     <li>
-                        <a href="/" className={darkMode ? 'Light' : 'Dark'}>ABOUT</a>
+                        <a href="/" className={darkMode ? 'light' : 'dark'}>ABOUT</a>
                     </li>
                     <li>
-                        <a href="/" className={darkMode ? 'Light' : 'Dark'}>PROJECT</a>
+                        <a href="/" className={darkMode ? 'light' : 'dark'}>PROJECT</a>
                     </li>
                     <li>
-                        <a href="/" className={darkMode ? 'Light' : 'Dark'}>CONTACT</a>
+                        <a href="/" className={darkMode ? 'light' : 'dark'}>CONTACT</a>
                     </li>
                 </div>
             </nav>

@@ -21,7 +21,6 @@ html {
 body {
   font-family: 'Montserrat','sans-serif';
   overflow-x: hidden;
-  background-color: black;
   transition: background 0.3s, color 0.3s;
 }
 

@@ -1,0 +1,10 @@
+/* index.css or App.css */
+
+body {
+  background-color: #191919;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #ffffff;
+}
