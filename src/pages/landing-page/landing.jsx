@@ -28,7 +28,7 @@ function LandingPage () {
                             <p className="label">EXPERIENCES</p>
                             <p className='value'>3+ Years</p>
                         </div>
-                        <button>Hire Me</button>
+                        <button className='hire-me-btn'>Hire Me</button>
                     </div>
                 </div>
                 <img src={Model} alt="pacot-model"/>

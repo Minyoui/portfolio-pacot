@@ -58,4 +58,67 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    gap: 80px;
+
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+}
+
+/* Project details */
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    align-items: center;
+}
+
+.project-details .label {
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+}
+
+.project-details .value {
+    font-weight: bold;
+    color: white;
+}
+
+/* Experiences details */
+
+.experiences-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    align-items: center;
+}
+
+.experiences-details .label {
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+}
+
+.experiences-details .value {
+    font-weight: bold;
+    color: white;
+}
+
+
+.hire-me-btn {
+    background-color: #191919;
+    font-family: 'Montserrat','sans-serif';
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    transform: translateX(15px);
 }
