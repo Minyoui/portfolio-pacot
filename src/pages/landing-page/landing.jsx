@@ -1,25 +1,40 @@
 import './landing.css';
 import DarkModeToggle from '../components/DarkModeToggle';
 import { useDarkMode } from '../../context/DarkModeContext';
-import Model from '../../assets/pacot-model.svg';
-import Smoke from '../../assets/smoke.png';
+import Model from '../../assets/pacot-pose.svg';
+
 import DarkLogo from '../../assets/pacot-logo.svg';
 import LightLogo from '../../assets/pacot-logo-drk.svg';
+
 function LandingPage () {
     const { darkMode } = useDarkMode();
 
     return (
         <>
-            <div className={`landing-wrapper ${darkMode ? 'light' : 'dark'}`}>
+            <div className='landing-wrapper'> 
                 <div className='landing-header'>
-                    <p className={darkMode ? 'light' : 'dark'}>Hi I am</p>
-                    <img src={DarkLogo} alt="logo" className={darkMode ? 'light-mode' : 'dark-mode'}/>
-                    <img src={LightLogo} alt="logo" className={darkMode ? 'dark-mode' : 'light-mode'}/>
-                    <img src={Smoke} className="smoke"/>
-                    <p className="title"><span>UI/UX</span> DESIGNER | <span>FRONT-END</span> DEVELOPER</p>
+                    <div className='landing-title'>
+                        <p className={darkMode? 'light' : 'dark'}>Hi I am</p>
+                        <img src={DarkLogo} alt="pacot-logo" className={darkMode? 'light-mode' : 'dark-mode'}/>
+                        <img src={LightLogo} alt="pacot-logo" className={darkMode? 'dark-mode' : 'light-mode'}/>
+                        <p className={darkMode? 'light' : 'dark'} id="desc"><strong>UI/UX</strong> DESIGNER <strong>FRONT-END</strong> DEVELOPER</p>
+                    </div>
+                    <div className='landing-details'>
+                        <div className='project-details'>
+                            <p className="label">PROJECTS</p>
+                            <p className='value'>8+</p>
+                        </div>
+                        <div className='experiences-details'>
+                            <p className="label">EXPERIENCES</p>
+                            <p className='value'>3+ Years</p>
+                        </div>
+                        <button>Hire Me</button>
+                    </div>
                 </div>
-                <img src={Model} className='landing-model'/>
+                <img src={Model} alt="pacot-model"/>
             </div>
+            
+            
         </>
     )
 }
