@@ -19,6 +19,7 @@ function App() {
     <>
       <Navbar />
       <Landing />
+      <About />
       <DarkModeToggle />
     </>
   )
