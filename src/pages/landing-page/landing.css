@@ -31,17 +31,17 @@
     width: 100%;
     justify-content: space-evenly;
 
-    padding: 50px;
+    padding: 100px;
 }
 
 .landing-title {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 
 .landing-title img{
-    width: 80dvh;
+    width: 65dvh;
 }
 
 #desc {
@@ -50,7 +50,7 @@
 }
 
 .landing-title p {
-    padding-right: 75dvh;
+    padding-right: 60dvh;
 }
 
 .landing-details {
@@ -58,11 +58,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
 
     position: absolute;
     bottom: 10%;
-    left: 35%;
+    left: 30%;
 }
 
 /* Project details */
@@ -77,11 +77,13 @@
 
 .project-details .label {
     font-weight: 600;
+    font-size: 20px;
     color: rgba(255,255,255,0.5);
 }
 
 .project-details .value {
     font-weight: bold;
+    font-size: 20px;
     color: white;
 }
 
@@ -97,26 +99,43 @@
 
 .experiences-details .label {
     font-weight: 600;
+    font-size: 20px;
     color: rgba(255,255,255,0.5);
 }
 
 .experiences-details .value {
     font-weight: bold;
+    font-size: 20px;
     color: white;
 }
 
+/* DIVIDER LINE */
+
+.line {
+    background-color: rgba(255,255,255,0.5);
+    height: 65px;
+    width:2px;
+}
 
 .hire-me-btn {
-    background-color: #191919;
     font-family: 'Montserrat','sans-serif';
     font-weight: 700;
     padding: 15px;
     border-radius: 100px;
-    color: white;
     border: none;
     width: 100px;
     cursor: pointer;
     transition: 0.3s ease;
+}
+
+.hire-me-btn.dark {
+    background-color: #191919;
+    color: white;
+}
+
+.hire-me-btn.light {
+    background-color: white;
+    color: #191919;
 }
 
 .hire-me-btn:hover {

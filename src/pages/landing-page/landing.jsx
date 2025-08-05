@@ -24,11 +24,13 @@ function LandingPage () {
                             <p className="label">PROJECTS</p>
                             <p className='value'>8+</p>
                         </div>
+                        <div className='line' />
                         <div className='experiences-details'>
                             <p className="label">EXPERIENCES</p>
                             <p className='value'>3+ Years</p>
                         </div>
-                        <button className='hire-me-btn'>Hire Me</button>
+                        <div className='line' />
+                        <button className={`hire-me-btn ${darkMode? 'light' : 'dark'}`}>Hire Me</button>
                     </div>
                 </div>
                 <img src={Model} alt="pacot-model"/>
