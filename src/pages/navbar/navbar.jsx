@@ -37,7 +37,7 @@ function Navbar () {
     return (
         <>
             <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-                    <a href='/'>
+                    <a href='#home'>
                         <img src={MiniDarkLogo} alt="mini-logo" className={darkMode ? 'light-mode' : 'dark-mode'}/>
                         <img src={MiniLightLogo} alt="mini-logo" className={darkMode ? 'dark-mode' : 'light-mode'}/>
                     </a>
@@ -45,10 +45,10 @@ function Navbar () {
                 <ul className={`navigation-links ${scrolled ? 'scrolled' : ''}`}>
                     <img src={MenuIcon} />
                     <li>
-                        <a href="#home" className={darkMode ? 'light' : 'dark'}>HOME</a>
+                        <a href="#about" className={darkMode ? 'light' : 'dark'}>ABOUT</a>
                     </li>
                     <li>
-                        <a href="#about" className={darkMode ? 'light' : 'dark'}>ABOUT</a>
+                        <a href="#skills" className={darkMode ? 'light' : 'dark'}>SKILLS</a>
                     </li>
                     <li>
                         <a href="/" className={darkMode ? 'light' : 'dark'}>PROJECT</a>
