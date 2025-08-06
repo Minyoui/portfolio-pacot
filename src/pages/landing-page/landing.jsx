@@ -1,5 +1,4 @@
 import './landing.css';
-import DarkModeToggle from '../components/DarkModeToggle';
 import { useDarkMode } from '../../context/DarkModeContext';
 import Model from '../../assets/pacot-pose.svg';
 
@@ -11,7 +10,7 @@ function LandingPage () {
 
     return (
         <>
-            <div className='landing-wrapper' id='#home'> 
+            <div className='landing-wrapper' id='home'> 
                 <div className='landing-header'>
                     <div className='landing-title'>
                         <p className={darkMode? 'light' : 'dark'}>Hi I am</p>

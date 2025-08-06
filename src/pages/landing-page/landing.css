@@ -5,12 +5,6 @@
     background: linear-gradient(
         to bottom right,
         transparent 50%,
-        #BC2427 50%
-    );
-
-    background: linear-gradient(
-        to bottom right,
-        transparent 50%,
         #BC2427 50%,
         #5B1313 100%
     );
