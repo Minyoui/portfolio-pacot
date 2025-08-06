@@ -1,17 +1,21 @@
 .skills-wrapper {
-    height: 100dvh;
+    height: 120dvh;
     width: 100%; 
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+
+    padding: 0 100px;
 }
 
 .skills-title {
     text-align: center;
     font-size: 7dvh;
-    font-weight: 400;
+    letter-spacing: 5px;
+    font-weight: 200;
+
 }
 
 .skills-title p span {
@@ -21,7 +25,7 @@
 
 .divider-line {
     height: 1px;
-    width: 40dvh;
+    width: 50dvh;
 }
 
 .divider-line.dark {
@@ -39,18 +43,126 @@
 
     height: auto;
     width: 100%;
+
+    gap: 50px;
 }
 
 .column {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    height: 55dvh;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.column.dark {
+    transition: 0.3s ease;
     background: linear-gradient(
         to bottom,
         #212121,
         transparent
     );
-    height: 30dvh;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
+
+.column.light {
+    transition: 0.3s ease;
+    background: linear-gradient(
+        to bottom,
+        #ababab,
+        transparent
+    );
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 30px 50px;
+    gap: 50px;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+}
+
+.column.light h1 {
+    color: rgba(0,0,0,0.5);
+}
+
+
+.info p {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.info p.light {
+    color: rgba(0,0,0,0.6);
+}
+
+.info p.dark {
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+.dev-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.dev-icons img {
+    width: 8dvh;
+    transition: 0.3s ease;
+}
+
+.dev-icons img:hover {
+    transition: 0.3s ease;
+    transform: scale(1.2);
+}
+
+.tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tool-icons img {
+    width: 8dvh;
+    transition: 0.3s ease;
+}
+
+.tool-icons img:hover {
+    transition: 0.3s ease;
+    transform: scale(1.2);
+}
+
+.soft-skills {
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.soft-skills p{
+    opacity: 50%;
+    letter-spacing: 1px;
+}
+
+.soft-skills.dark {
+    background-color: #1B1B1B;
+    border: solid 2px #3F3F3F;
+}
+
+.soft-skills.light {
+    background-color: #e5e5e5;
+    border: solid 2px #ababab;
+}
+
