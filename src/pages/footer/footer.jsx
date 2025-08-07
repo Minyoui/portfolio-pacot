@@ -4,7 +4,7 @@ import Facebook from '../../assets/Facebook.svg';
 import Instagram from '../../assets/Instagram.svg';
 import LinkedIn from '../../assets/LinkedIn.svg';
 import TikTok from '../../assets/TikTok.svg';
-import Github from '../../assets/Github.svg';
+import Github from '../../assets/GitHub.svg';
 import Jobstreet from '../../assets/Jobstreet.svg';
 
 function Footer () {
