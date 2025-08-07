@@ -54,7 +54,7 @@ function Navbar () {
                         <a href="#projects" className={darkMode ? 'light' : 'dark'}>PROJECT</a>
                     </li>
                     <li>
-                        <a href="/" className={darkMode ? 'light' : 'dark'}>CONTACT</a>
+                        <a href="#contact" className={darkMode ? 'light' : 'dark'}>CONTACT</a>
                     </li>
                 </ul>
             </nav>

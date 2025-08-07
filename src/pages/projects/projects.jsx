@@ -11,8 +11,15 @@ function Projects () {
             id: 'project-one',
             title: 'Maison`D',
             description: 'Modern Luxurious Spa Website',
-            tags: ['WIP','React'],
+            tags: ['React','HTML'],
             link: 'https://maison-d.vercel.app/'
+        },
+        {
+            id: 'project-two',
+            title: 'Coming Soon',
+            description: 'Work in Progress',
+            tags: ['WIP','React'],
+            link: ''
         },
     ];
 
@@ -24,7 +31,6 @@ function Projects () {
                     <p><span>MY</span> PROJECTS</p>
                     <div className={`divider-line ${darkMode? 'light' : 'dark'}`} />
                 </div>
-
                 <div className='projects-container'>
                     {projectsData.map((project) => (
                         <div className='project-box' id={project.id} key={project.id}>

@@ -1,11 +1,12 @@
 .project-wrapper {
     width: 100%;
-    height: 150dvh;
+    height: 100dvh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+
+    padding-top: 15dvh;
 }
 
 .projects-title {
@@ -87,7 +88,11 @@
 }
 
 .tags li {
-    background-color: #BC2427;
+    background: linear-gradient(
+        to bottom,
+        #BC2427,
+        #6b0e11
+    );
     padding: 8px 20px;
     color: white;
     border-radius: 5px;

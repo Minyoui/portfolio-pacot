@@ -14,8 +14,9 @@
     justify-content: space-evenly;
 }
 
-.landing-wrapper img {
+.landing-wrapper #model {
     width: 100dvh;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.8));
 }
 
 .landing-header {
@@ -109,6 +110,10 @@
     background-color: rgba(255,255,255,0.5);
     height: 65px;
     width:2px;
+}
+
+.contact-jump {
+    z-index: 2;
 }
 
 .hire-me-btn {

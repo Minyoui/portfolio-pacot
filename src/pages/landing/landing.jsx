@@ -29,10 +29,12 @@ function LandingPage () {
                             <p className='value'>3+ Years</p>
                         </div>
                         <div className='line' />
-                        <button className={`hire-me-btn ${darkMode? 'light' : 'dark'}`}>Hire Me</button>
+                        <a href="#contact" className='contact-jump'>
+                            <button className={`hire-me-btn ${darkMode? 'light' : 'dark'}`}>Hire Me</button>
+                        </a>
                     </div>
                 </div>
-                <img src={Model} alt="pacot-model"/>
+                <img src={Model} alt="pacot-model" id="model"/>
             </div>
             
             
