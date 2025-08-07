@@ -6,6 +6,8 @@ import Landing from './pages/landing/landing';
 import Navbar from './pages/navbar/navbar';
 import Skills from './pages/skills/skills';
 import Projects from './pages/projects/projects';
+import Contact from './pages/contact/contact';
+import Footer from './pages/footer/footer';
 
 import DarkModeToggle from './pages/components/DarkModeToggle';
 import { useDarkMode } from './context/DarkModeContext';
@@ -24,6 +26,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
+      <Footer />
+
       <DarkModeToggle />
     </>
   )
