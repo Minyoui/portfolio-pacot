@@ -26,7 +26,8 @@ function App() {
       <Landing />
       <Media />
       <About />
-
+      <Skills />
+      
       <DarkModeToggle />
     </>
   )

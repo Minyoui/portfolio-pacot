@@ -1,8 +1,8 @@
 import './navbar.css';
 import { useState, useEffect } from 'react';
 
-import MiniDarkLogo from '../../assets/pacot-mini-logo.svg';
-import MiniLightLogo from '../../assets/pacot-mini-logo-drk.svg';
+import MiniDarkLogo from '../../assets/pacot-logo.svg';
+import MiniLightLogo from '../../assets/pacot-logo-drk.svg';
 import DarkModeToggle from '../components/DarkModeToggle';
 import { useDarkMode } from '../../context/DarkModeContext';
 import MenuIcon from '../../assets/Menu.png';
