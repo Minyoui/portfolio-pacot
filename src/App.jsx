@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import About from './pages/about/about';
 import Landing from './pages/landing/landing';
+import About from './pages/about/about';
+import Media from './pages/media/media';
 import Navbar from './pages/navbar/navbar';
 import Skills from './pages/skills/skills';
 import Projects from './pages/projects/projects';
@@ -23,11 +24,8 @@ function App() {
     <>
       <Navbar />
       <Landing />
+      <Media />
       <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
 
       <DarkModeToggle />
     </>
