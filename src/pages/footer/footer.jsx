@@ -10,7 +10,7 @@ import Jobstreet from '../../assets/Jobstreet.svg';
 function Footer () {
     return (
         <>
-            <div className='footer-wrapper'>
+            <footer className='footer-wrapper'>
                 <a href="#home" className='footer-logo'>
                     <img src={Logo} alt="logo" />
                 </a>
@@ -34,7 +34,8 @@ function Footer () {
                         <img src={TikTok} alt='TikTok'/>
                     </a>
                 </div>
-            </div>
+                <p className='copyright'>© Evane Pacot 2025. All rights reserved. Icons by <a href='https://icons8.com/' target="_blank">Icons8</a></p>
+            </footer>
         </>
     )
 }

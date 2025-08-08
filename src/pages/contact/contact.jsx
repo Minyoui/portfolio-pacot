@@ -22,9 +22,22 @@ function Contact () {
                 </p>
 
                 <form className={`contact-form ${darkMode? 'light' : ''}`}>
-                    <input
-                        type='email'
-                        placeholder='Enter Email Address'
+                    <div className='form-row'>
+                        <input 
+                            type='text'
+                            placeholder='Enter your name'
+                            required
+                        />
+                        <input
+                            type='email'
+                            placeholder='Enter Email Address'
+                            required
+                        />
+                    </div>
+                    <textarea 
+                        className={`form-row ${darkMode? 'light' : ''}`} 
+                        type='text'
+                        placeholder='Your message here'
                         required
                     />
                     <button type='submit'>Submit<img src={SendIcon}/></button>

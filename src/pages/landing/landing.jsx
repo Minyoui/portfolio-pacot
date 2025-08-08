@@ -11,6 +11,7 @@ function LandingPage () {
     return (
         <>
             <div className='landing-wrapper' id='home'> 
+                
                 <div className='landing-header'>
                     <div className='landing-title'>
                         <p className={darkMode? 'light' : 'dark'}>Hi I am</p>

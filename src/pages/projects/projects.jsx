@@ -21,6 +21,13 @@ function Projects () {
             tags: ['WIP','React'],
             link: ''
         },
+        {
+            id: 'project-two',
+            title: 'Coming Soon',
+            description: 'Work in Progress',
+            tags: ['WIP','React'],
+            link: ''
+        },
     ];
 
 
@@ -31,6 +38,7 @@ function Projects () {
                     <p><span>MY</span> PROJECTS</p>
                     <div className={`divider-line ${darkMode? 'light' : 'dark'}`} />
                 </div>
+                
                 <div className='projects-container'>
                     {projectsData.map((project) => (
                         <div className='project-box' id={project.id} key={project.id}>
