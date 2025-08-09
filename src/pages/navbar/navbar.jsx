@@ -36,11 +36,16 @@ function Navbar () {
 
     return (
         <>
-            <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-                    <a href='#home'>
-                        <img src={MiniDarkLogo} alt="mini-logo" className={darkMode ? 'light-mode' : 'dark-mode'}/>
-                        <img src={MiniLightLogo} alt="mini-logo" className={darkMode ? 'dark-mode' : 'light-mode'}/>
-                    </a>
+            <a href='#home' className='navbar-logo'>
+                <img src={MiniDarkLogo} alt="mini-logo" className={darkMode ? 'light-mode' : 'dark-mode'}/>
+                <img src={MiniLightLogo} alt="mini-logo" className={darkMode ? 'dark-mode' : 'light-mode'}/>
+            </a>
+
+            <div className='nav-wrapper'>
+                <nav 
+                className={`navbar ${scrolled ? 'scrolled' : ''}`}
+                id={`${menuOpen? 'nav-active' : ''}`}>
+                    
                 
                 <ul className={`navigation-links ${scrolled ? 'scrolled' : ''}`}>
                     <img src={MenuIcon} />
@@ -58,6 +63,8 @@ function Navbar () {
                     </li>
                 </ul>
             </nav>
+
+            </div>
             <div className={darkMode ? 'dark-theme' : 'light-theme'}>
       {/* Your Routes or Components */}
       <DarkModeToggle />
