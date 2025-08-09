@@ -26,7 +26,7 @@ function Contact () {
                         <div className={`email ${darkMode? 'light' : 'dark'}`}>
                             <img src={EmailIcon} alt='Email' id='light'/>
                             <img src={EmailIconDark} alt='Email' id='dark'/>
-                            <p>sample@gmail.com</p>
+                            <p>evanepacot2002@gmail.com</p>
                         </div>
                         {/* ADDRESS */}
                         <div className={`address ${darkMode? 'light' : 'dark'}`}>

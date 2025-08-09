@@ -45,16 +45,16 @@ function Navbar () {
                 <ul className={`navigation-links ${scrolled ? 'scrolled' : ''}`}>
                     <img src={MenuIcon} />
                     <li>
-                        <a href="#about" className={darkMode ? 'light' : 'dark'}>ABOUT</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#skills" className={darkMode ? 'light' : 'dark'}>SKILLS</a>
+                        <a href="#skills">SKILLS</a>
                     </li>
                     <li>
-                        <a href="#projects" className={darkMode ? 'light' : 'dark'}>PROJECT</a>
+                        <a href="#projects">PROJECT</a>
                     </li>
                     <li>
-                        <a href="#contact" className={darkMode ? 'light' : 'dark'}>CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>

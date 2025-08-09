@@ -1,13 +1,14 @@
 .navbar {
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), transparent);
     padding: 30px;
 
     display: flex;
     flex-direction: row;
 
-    position: absolute;
+
+    position: fixed;
+    justify-content: center;
     z-index: 2;
 }
 
@@ -19,23 +20,31 @@
     z-index: 999;
 }
 
-.navbar.scrolled a img {
+.navbar a img {
     position: absolute;
     left: 30px;
-    
 }
 
+
 .navigation-links {
-    width: 100%;
-    height: auto;
+    width: 100dvh;
+    height: 6dvh;
+    background: #2B2B2B;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
+    border-radius: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    transition: 0.3 ease;
+    
+    transition: width 0.4s ease, gap 0.4s ease;
     
     overflow: hidden;
+}
+
+.navigation-links li a {
+    color: white;
 }
 
 .navigation-links li:hover a{
@@ -52,15 +61,27 @@
     border-radius: 50px;
     height: 6dvh;
     width: 15dvh;
-    transition: 0.3s ease;
+    gap: 0;
 }
 
 .navigation-links.scrolled:hover{
-    transition: 0.3s ease;
+    gap: 100px;
     width: 100dvh;
 }
 
+.navigation-links li {
+    list-style: none;
+    transition: opacity 0.3s ease;
+}
+
+.navigation-links.scrolled li {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .navigation-links.scrolled:hover li {
+    opacity: 1;
+    pointer-events: auto;
     transition: 0.3 ease;
     display: flex;
 }

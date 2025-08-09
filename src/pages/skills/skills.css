@@ -89,6 +89,13 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+.development-info.dark #dark {
+    display: none;
+}
+
+.development-info.light #light {
+    display: none;
+}
 
 /* TOOLS */
 
@@ -169,4 +176,13 @@
 
 .tools-info.light .line-right {
     background-color: rgba(0,0,0,0.5);
+}
+
+
+.tools-info.dark #dark {
+    display: none;
+}
+
+.tools-info.light #light {
+    display: none;
 }
