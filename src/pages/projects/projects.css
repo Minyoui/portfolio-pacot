@@ -12,14 +12,9 @@
 .projects-title {
     text-align: center;
     font-size: 5dvh;
-    letter-spacing: 7px;
+    letter-spacing: 15px;
     font-weight: 200;
 
-}
-
-.projects-title p span {
-    font-weight: 800;
-    color: #BC2427;
 }
 
 .projects-container {

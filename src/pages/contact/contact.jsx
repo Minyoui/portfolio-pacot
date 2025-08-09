@@ -5,61 +5,58 @@ import PhoneIcon from '../../assets/Phone.svg';
 import EmailIconDark from '../../assets/Email-dark.svg';
 import PhoneIconDark from '../../assets/Phone-dark.svg';
 import SendIcon from '../../assets/Send.svg';
+import AddressIcon from '../../assets/Address.svg';
+import AddressIconDark from '../../assets/AddressDark.svg';
 
 function Contact () {
     const { darkMode } = useDarkMode();
     return (
         <>
-            <div className='contact-wrapper' id="contact">
-                <div className={`contact-title ${darkMode? 'light' : 'dark'}`}>
-                    <p>GET IN <span>TOUCH</span></p>
-                    <div className={`divider-line ${darkMode? 'light' : 'dark'}`} />
-                </div>
-
-                <p className={`sub-header ${darkMode? 'light' : 'dark'}`}>
-                    I'm always interested in new <span>opportunities</span> and <span>collaborations</span>. 
-                    Let's create something amazing <strong>together</strong>.
-                </p>
-
-                <form className={`contact-form ${darkMode? 'light' : ''}`}>
-                    <div className='form-row'>
+            <div className='contact-wrapper' id='contact'>
+                <h1 className={`contact-title ${darkMode? 'light' : 'dark'}`}>CONTACT ME</h1>
+                <div className='contact-container'>
+                    <div className='contact-info'>
+                        {/* PHONE */}
+                        <div className={`phone ${darkMode? 'light' : 'dark'}`}>
+                            <img src={PhoneIcon} alt='Phone' id='light'/>
+                            <img src={PhoneIconDark} alt='Phone' id='dark'/>
+                            <p>(+63) 947-631-8165</p>
+                        </div>
+                        {/* EMAIL */}
+                        <div className={`email ${darkMode? 'light' : 'dark'}`}>
+                            <img src={EmailIcon} alt='Email' id='light'/>
+                            <img src={EmailIconDark} alt='Email' id='dark'/>
+                            <p>sample@gmail.com</p>
+                        </div>
+                        {/* ADDRESS */}
+                        <div className={`address ${darkMode? 'light' : 'dark'}`}>
+                            <img src={AddressIcon} alt='Address' id='light'/>
+                            <img src={AddressIconDark} alt='Address' id='dark'/>
+                            <p>Imus City, Cavite</p>
+                        </div>
+                    </div>
+                    <div className={`contact-line-splitter ${darkMode? 'light' : 'dark'}`}/>
+                    <form className={`contact-form ${darkMode? 'light' : 'dark'}`}> 
                         <input 
                             type='text'
-                            placeholder='Enter your name'
+                            placeholder='Enter Your Full Name'
                             required
                         />
-                        <input
+                        <input 
                             type='email'
-                            placeholder='Enter Email Address'
+                            placeholder='Enter Your Email'
                             required
                         />
-                    </div>
-                    <textarea 
-                        className={`form-row ${darkMode? 'light' : ''}`} 
-                        type='text'
-                        placeholder='Your message here'
-                        required
-                    />
-                    <button type='submit'>Submit<img src={SendIcon}/></button>
-                </form>
-
-                <div className='contact-info'>
-                    <div className={`phone ${darkMode? 'light' : 'dark'}`}>
-                        <h1>
-                            <img src={PhoneIcon} id="light-icon"/>
-                            <img src={PhoneIconDark} id="dark-icon"/>
-                            Phone
-                        </h1>
-                        <p>(+63) 947-631-8165</p>
-                    </div>
-                    <div className={`email ${darkMode? 'light' : 'dark'}`}>
-                        <h1>
-                            <img src={EmailIcon} id="light-icon"/>
-                            <img src={EmailIconDark} id="dark-icon"/>                           
-                            Email
-                        </h1>
-                        <p>evanepacot2002@gmail.com</p>
-                    </div>
+                        <div className={`message-box ${darkMode? 'light' : 'dark'}`}>
+                            <textarea 
+                            placeholder='Get in touch...'
+                            required
+                            />
+                            <button type='submit'>
+                                <img src={SendIcon}/>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

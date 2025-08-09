@@ -35,8 +35,8 @@ function Projects () {
         <>
             <div className='project-wrapper' id="projects">
                 <div className={`projects-title ${darkMode? 'light' : 'dark'}`}>
-                    <p><span>MY</span> PROJECTS</p>
-                    <div className={`divider-line ${darkMode? 'light' : 'dark'}`} />
+                    <p>MY PROJECTS</p>
+                    
                 </div>
                 
                 <div className='projects-container'>

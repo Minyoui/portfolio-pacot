@@ -5,10 +5,11 @@ import HTML_Icon from '../../assets/Html 5.svg';
 import React_Icon from '../../assets/React.svg';
 import CSS_Icon from '../../assets/CSS3.svg';
 import JS_Icon from '../../assets/JavaScript.svg';
-import Canva from '../../assets/Canva-logo 1.png';
-import Figma from '../../assets/Figma.png';
-import VStudio from '../../assets/Visual Studio Code 2019.png';
-import Photoshop from '../../assets/Adobe Photoshop.png';
+
+import Canva from '../../assets/Canva.svg';
+import Figma from '../../assets/Figma.svg';
+import VStudio from '../../assets/Visual Studio.svg';
+import Photoshop from '../../assets/Adobe Photoshop.svg';
 
 
 function Skills () {
@@ -47,7 +48,10 @@ function Skills () {
                             <div className='line-left' />
                         </div>
                         <div className='tools-icons'>
-
+                            <img src={VStudio} />
+                            <img src={Figma} />
+                            <img src={Canva} />
+                            <img src={Photoshop} />
                         </div>
                         <div className='tools-right'>
                             <p>Visual Studio, Figma, Canva, Adobe Photoshop</p>

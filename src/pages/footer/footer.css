@@ -2,16 +2,34 @@
     height: 50dvh;
     width: 100%;
 
-    background: linear-gradient(
-        to bottom,
-        #BC2427 50%,
-        #5B1313 100%
-    );
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.footer-wrapper.dark {
+    background: linear-gradient(
+        to bottom,
+        #D9D9D9 50%,
+        #737373 100%
+    );
+}
+
+.footer-wrapper.light {
+    background: linear-gradient(
+        to bottom,
+        #212121 50%,
+        #3F3F3F 100%
+    );
+}
+
+.footer-wrapper.dark #light {
+    display: none;
+}
+
+.footer-wrapper.light #dark {
+    display: none;
 }
 
 .footer-logo img {

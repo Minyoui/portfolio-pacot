@@ -27,6 +27,9 @@ function App() {
       <Media />
       <About />
       <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
       
       <DarkModeToggle />
     </>

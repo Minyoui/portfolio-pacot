@@ -1,18 +1,23 @@
 import './footer.css';
 import Logo from '../../assets/pacot-logo.svg';
+import LogoDark from '../../assets/pacot-logo-drk.svg';
 import Facebook from '../../assets/Facebook.svg';
 import Instagram from '../../assets/Instagram.svg';
 import LinkedIn from '../../assets/LinkedIn.svg';
 import TikTok from '../../assets/TikTok.svg';
 import Github from '../../assets/GitHub.svg';
 import Jobstreet from '../../assets/Jobstreet.svg';
+import { useDarkMode } from '../../context/DarkModeContext';
 
 function Footer () {
+    const { darkMode } = useDarkMode();
+
     return (
         <>
-            <footer className='footer-wrapper'>
+            <footer className={`footer-wrapper ${darkMode? 'light' : 'dark'}`}>
                 <a href="#home" className='footer-logo'>
-                    <img src={Logo} alt="logo" />
+                    <img src={Logo} alt="logo" id='light'/>
+                    <img src={LogoDark} alt="logo" id='dark'/>
                 </a>
                 <div className='social-media-links'>
                     <a href="https://ph.jobstreet.com/profile/evane-pacot-r8yGs9PNjJ" target="_blank">
