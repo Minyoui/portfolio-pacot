@@ -22,7 +22,7 @@ function Projects () {
             link: ''
         },
         {
-            id: 'project-two',
+            id: 'project-three',
             title: 'Coming Soon',
             description: 'Work in Progress',
             tags: ['WIP','React'],

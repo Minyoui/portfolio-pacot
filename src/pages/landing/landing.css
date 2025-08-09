@@ -11,6 +11,26 @@
     width: 50%;
 }
 
+.dark.side .bg{
+    background-image: url('../../assets/background-code.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 10%;
+}
+
+.light.side .bg{
+    background-image: url('../../assets/ui-ux-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 5%;
+}
+
 .light.side {
     background: linear-gradient(
         to bottom,
