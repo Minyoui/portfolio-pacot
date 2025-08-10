@@ -10,7 +10,7 @@ function LandingPage () {
 
     return (
         <>
-            <div className='landing-wrapper' id='home'> 
+            <div className={`landing-wrapper ${darkMode? 'light' : 'dark'}`} id='home'> 
                 <div className={`${darkMode? 'light' : 'dark'} side`}>
                     <div className='bg'/>
                 </div>
@@ -23,7 +23,7 @@ function LandingPage () {
                         <p className={`introduce-text ${darkMode? 'light' : 'dark'}`}>
                             Hi I am
                         </p>
-                        <p className='portfolio-owner'>
+                        <p className={`portfolio-owner ${darkMode? 'light' : 'dark'}`}>
                             <span className={`${darkMode? 'light' : 'dark'}`}>EVANE</span>
                             <span className={`${darkMode? 'dark' : 'light'}`}>PACOT</span>
                         </p>

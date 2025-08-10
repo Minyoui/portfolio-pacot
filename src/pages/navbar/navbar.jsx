@@ -36,39 +36,38 @@ function Navbar () {
 
     return (
         <>
-            <a href='#home' className='navbar-logo'>
-                <img src={MiniDarkLogo} alt="mini-logo" className={darkMode ? 'light-mode' : 'dark-mode'}/>
-                <img src={MiniLightLogo} alt="mini-logo" className={darkMode ? 'dark-mode' : 'light-mode'}/>
+            {/* NAVBAR LOGO */}
+            <a href='#home' className={`navbar-logo ${darkMode? 'light' : 'dark'}`}>
+                <img src={MiniDarkLogo} alt="mini-logo" id="dark" />
+                <img src={MiniLightLogo} alt="mini-logo" id="light" />
             </a>
+            
 
+            {/* MAIN NAVBAR */}
             <div className='nav-wrapper'>
-                <nav 
-                className={`navbar ${scrolled ? 'scrolled' : ''}`}
-                id={`${menuOpen? 'nav-active' : ''}`}>
-                    
-                
-                <ul className={`navigation-links ${scrolled ? 'scrolled' : ''}`}>
-                    <img src={MenuIcon} />
-                    <li>
-                        <a href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="#skills">SKILLS</a>
-                    </li>
-                    <li>
-                        <a href="#projects">PROJECT</a>
-                    </li>
-                    <li>
-                        <a href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-
+                <nav className={`nav-container ${scrolled? 'scrolled' : ''}`}
+                    id={`${menuOpen? 'nav-active' : ''}`}
+                >
+                    <ul>
+                        <li><a href='#about'>ABOUT</a></li>
+                        <li><a href='#skills'>SKILLS</a></li>
+                        <li><a href='#projects'>PROJECTS</a></li>
+                        <li><a href='#contact'>CONTACT</a></li>
+                    </ul>
+                    <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+                        ☰
+                    </div>
+                    <div className={`cancel ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+                        X
+                    </div>
+                </nav>
             </div>
+           
             <div className={darkMode ? 'dark-theme' : 'light-theme'}>
       {/* Your Routes or Components */}
       <DarkModeToggle />
     </div>
+    <a href='#home' className={`quick-nav ${darkMode? 'light' : 'dark'}`}/>
         </>
     )
 }

@@ -71,12 +71,19 @@
     gap: 10px;
 }
 
+.light {
+    color: #191919;
+}
+
+.dark {
+    color: white;
+}
+
 .introduce-text {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    padding-right: 76dvh;
+    padding-left: 25%;
+    width: 100%;
 }
 
 .introduce-text.dark {
@@ -89,7 +96,9 @@
 
 .role-text {
     color: rgba(255,255,255,0.5);
-    padding-left: 60dvh;
+    width: 100%;
+    text-align: right;
+    padding-right: 25%;
 }
 
 .landing-quote {
@@ -99,4 +108,57 @@
     justify-content: center;
     width: 100%;
     color: rgba(255,255,255,0.5);
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+    .portfolio-owner {
+        flex-direction: column;
+        letter-spacing: 15px;
+    }
+    
+    .landing-container {
+        gap: 10px;
+    }
+    
+    .landing-title {
+        gap: 20px;
+    }
+    
+    
+    
+
+    /* DARK MODE */
+    .landing-wrapper.dark .light.side {
+        display: none;
+    }
+
+    .landing-wrapper.dark .dark.side {
+        width: 100%;
+    }
+    .portfolio-owner.dark span {
+        color: white;
+    }
+
+
+    /* LIGHT MODE */
+
+    .landing-wrapper.light .dark.side {
+        display: none;
+    }
+
+    .landing-wrapper.light .light.side {
+        width: 100%;
+    }
+    .portfolio-owner.light span {
+        color: #191919;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .landing-quote {
+        display: none;
+    }
 }
