@@ -1,6 +1,6 @@
 import './landing.css';
 import { useDarkMode } from '../../context/DarkModeContext';
-import Model from '../../assets/Model-one.svg';
+import Model from '../../assets/Pacot.png';
 import DarkLogo from '../../assets/pacot-logo.svg';
 import LightLogo from '../../assets/pacot-logo-drk.svg';
 import TextType from '../components/TextType';

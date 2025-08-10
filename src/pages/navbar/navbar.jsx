@@ -54,7 +54,8 @@ function Navbar () {
                         <li><a href='#projects'>PROJECTS</a></li>
                         <li><a href='#contact'>CONTACT</a></li>
                     </ul>
-                    <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+                    <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}
+                        id={`${darkMode? 'light-hamburger' : ''}`}>
                         ☰
                     </div>
                     <div className={`cancel ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>

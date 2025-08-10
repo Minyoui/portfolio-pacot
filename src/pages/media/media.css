@@ -12,12 +12,30 @@
     height: 23dvh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+    padding: 0 30px;
+
+    overflow-x: hidden;
+    overflow-x: scroll;
 
     border-top: solid 1px #737373;
     border-bottom: solid 1px #737373;
+}
+
+.media-container::-webkit-scrollbar {
+    width: 100%;
+    height: 2px;
+}
+
+.media-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.media-container::-webkit-scrollbar-thumb {
+    background-color: #737373;
+    border-radius: 100px;
 }
 
 .media-container a img{
