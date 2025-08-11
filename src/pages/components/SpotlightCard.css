@@ -1,6 +1,5 @@
 .card-spotlight {
   position: relative;
-  border: 1px solid #222;
   padding: 2rem;
   overflow: hidden;
   --mouse-x: 50%;

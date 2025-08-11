@@ -11,11 +11,13 @@ function LandingPage () {
     return (
         <>
             <div className={`landing-wrapper ${darkMode? 'light' : 'dark'}`} id='home'> 
-                <div className={`${darkMode? 'light' : 'dark'} side`}>
-                    <div className='bg'/>
-                </div>
-                <div className={`${darkMode? 'dark' : 'light'} side`}>
-                    <div className='bg'/>
+                <div className='landing-bg'>
+                    <div className={`${darkMode? 'light' : 'dark'} side`}>
+                        <div className='bg'/>
+                    </div>
+                    <div className={`${darkMode? 'dark' : 'light'} side`}>
+                        <div className='bg'/>
+                    </div>
                 </div>
                 <div className='landing-container'>
                     <img src={Model}/>

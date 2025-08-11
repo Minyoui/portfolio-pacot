@@ -8,9 +8,16 @@ import PaintIconDark from '../../assets/Paint-dark.svg';
 import BoltIconDark from '../../assets/Bolt-dark.svg';
 
 import SpotlightCard from '../components/SpotlightCard';
+import DecryptedText from '../components/DecryptedText';
 
 function AboutPage () {
     const { darkMode } = useDarkMode();
+
+    const AboutText = [
+        {
+            text: "Hello"
+        }
+    ];
 
     return (
         <>

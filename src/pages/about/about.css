@@ -1,5 +1,5 @@
 .about-wrapper {
-    padding: 50px 0;
+    padding: 100px 0;
     height: auto;
     width: 100%;
     display: flex;
@@ -23,21 +23,23 @@
 }
 
 .about-title {
-    padding: 0 5%;
+    transition: all 0.4s ease;
+    padding: 0 30px;
     font-weight: 300;
     letter-spacing: 20px;
     text-align: center;
+    font-size: 2rem;
     width: 100%;
 }
 
 
 .about-desc {
     max-width: 60%;
-    text-align: center;
+    text-align: justify;
 }
 
 .about-desc.dark {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.3);
 }
 
 .about-desc.dark span {
@@ -62,6 +64,7 @@
     display: flex;
     flex-direction: row;
     padding: 50px;
+    gap: 20px;
     justify-content: center;
 
 }
@@ -118,6 +121,10 @@
 }
 
 @media (max-width: 720px) {
+    .about-title {
+        letter-spacing: 10px;
+    }
+
     .about-wrapper {
         height: auto;
     }
