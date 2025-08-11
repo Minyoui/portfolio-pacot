@@ -5,6 +5,7 @@ import PhoneIcon from '../../assets/Phone.svg';
 import EmailIconDark from '../../assets/Email-dark.svg';
 import PhoneIconDark from '../../assets/Phone-dark.svg';
 import SendIcon from '../../assets/Send.svg';
+import SendIconDark from '../../assets/SendDark.svg';
 import AddressIcon from '../../assets/Address.svg';
 import AddressIconDark from '../../assets/AddressDark.svg';
 
@@ -53,7 +54,8 @@ function Contact () {
                             required
                             />
                             <button type='submit'>
-                                <img src={SendIcon}/>
+                                <img src={SendIcon} id="light"/>
+                                <img src={SendIconDark} id="dark"/>
                             </button>
                         </div>
                     </form>
