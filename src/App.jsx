@@ -25,7 +25,8 @@ function App() {
       <Navbar />
       <Landing />
       <Media />
-
+      <About />
+      <Skills />
 
       
       <DarkModeToggle />

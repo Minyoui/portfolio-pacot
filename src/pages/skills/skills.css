@@ -1,21 +1,20 @@
 .skills-wrapper {
-    height: 100dvh;
+    height: auto;
     width: 100%;
 
     display: flex;
     flex-direction: column;
     padding: 150px 0;
-
-    gap: 20dvh;
+    gap: 50px;
 }
 
 .development-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 50dvh;
-    gap: 10dvh;
+    justify-content: center;
+    height: auto;
+    gap: 100px;
 
     width: 100%;
 }
@@ -35,6 +34,7 @@
 .dev-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -56,7 +56,7 @@
 .development-icons {
     width: 30%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 0 5px;
@@ -76,6 +76,7 @@
 .dev-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 20%;
 }
 
@@ -103,9 +104,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 50dvh;
+    justify-content: center;
+    height: auto;
     gap: 10dvh;
+    padding-top: 100px;
 
     width: 100%;
 }
@@ -125,6 +127,7 @@
 .tools-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 20%;
 }
 
@@ -160,6 +163,7 @@
 .tools-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -185,4 +189,63 @@
 
 .tools-info.light #light {
     display: none;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 720px) {
+
+    .skills-wrapper {
+        height: auto;
+        gap: 10px;
+    }
+
+    /* DEVELOPMENT */
+    .development-container h1 {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .development-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dev-left p {
+        text-align: center;
+    }
+
+    .dev-right {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .development-icons {
+        width: 100%;
+    }
+
+    /* TOOLS */
+
+    .tools-container h1 {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .tools-info {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .tools-left {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .tools-right p {
+        text-align: center;
+    }
+
+    .tools-icons {
+        width: 100%;
+    }
 }

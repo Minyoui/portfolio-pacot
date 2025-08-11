@@ -7,6 +7,8 @@ import EditIconDark from '../../assets/Edit-dark.svg';
 import PaintIconDark from '../../assets/Paint-dark.svg';
 import BoltIconDark from '../../assets/Bolt-dark.svg';
 
+import SpotlightCard from '../components/SpotlightCard';
+
 function AboutPage () {
     const { darkMode } = useDarkMode();
 
@@ -23,30 +25,36 @@ function AboutPage () {
                 </div>
 
                 <div className='plan-phase-container'>
-                    <div className={`phase-box ${darkMode? 'light' : 'dark'}`}>
+                    <SpotlightCard 
+                        className={`phase-box ${darkMode? 'light' : 'dark'}`}
+                        spotlightColor='rgba(254, 252, 113, 0.8)'>
                         <img src={EditIcon} alt='Edit' id='icon-light'/>
                         <img src={EditIconDark} alt='Edit' id='icon-dark'/>
                         <h2>UI & UX</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                    </div>
-                    <div className={`phase-box ${darkMode? 'light' : 'dark'}`}>
+                    </SpotlightCard>
+                    <SpotlightCard 
+                        className={`phase-box ${darkMode? 'light' : 'dark'}`}
+                        spotlightColor='rgba(18, 176, 224, 0.8)'>
                         <img src={PaintIcon} alt='Paint' id='icon-light'/>
                         <img src={PaintIconDark} alt='Paint' id='icon-dark'/>
                         <h2>Design & Creative</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                    </div>
-                    <div className={`phase-box ${darkMode? 'light' : 'dark'}`}>
+                    </SpotlightCard>
+                    <SpotlightCard 
+                        className={`phase-box ${darkMode? 'light' : 'dark'}`} 
+                        spotlightColor="rgba(224, 45, 18, 0.8)">
                         <img src={BoltIcon} alt='Bolt' id='icon-light'/>
                         <img src={BoltIconDark} alt='Bolt' id='icon-dark'/>
                         <h2>Development</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                    </div>
+                    </SpotlightCard>
                 </div>
             </div>
         </>
