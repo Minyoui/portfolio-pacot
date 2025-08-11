@@ -11,9 +11,11 @@
 
 .projects-title {
     text-align: center;
-    font-size: 5dvh;
+    font-size: 2rem;
     letter-spacing: 15px;
     font-weight: 200;
+
+    padding: 0 15px;
 
 }
 
@@ -28,8 +30,9 @@
 
 .project-box {
     background-color: #212121;
-    height: 50dvh;
-    width: 60%;
+    height: 500px;
+    width: 80%;
+    max-width: 1000px;
     border: solid 1px #3F3F3F;
     border-radius: 20px;
     position: relative;
@@ -124,4 +127,17 @@
     font-weight: 800;
     padding: 25px;
     border-top-left-radius: 40px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 720px) {
+    .projects-container {
+        padding: 50px 0;
+    }
+
+    .project-box {
+        border-radius: 0px;
+        width: 100%;
+    }
 }
