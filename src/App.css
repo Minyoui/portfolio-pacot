@@ -8,3 +8,8 @@ body {
 body.light {
   background-color: #ffffff;
 }
+
+/* This removes the blue or gray tap highlight on mobile devices */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
