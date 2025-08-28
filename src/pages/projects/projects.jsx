@@ -12,7 +12,7 @@ function Projects () {
             title: 'Maison`D',
             description: 'Modern Luxurious Spa Website',
             tags: ['React','HTML'],
-            link: 'https://maison-d.vercel.app/'
+            link: 'https://project-maison.vercel.app/'
         },
         {
             id: 'project-two',
