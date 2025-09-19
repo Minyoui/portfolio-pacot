@@ -1,6 +1,6 @@
 import './landing.css';
 import { useDarkMode } from '../../context/DarkModeContext';
-import Model from '../../assets/Pacot.png';
+import Model from '../../assets/Pacot.webp';
 import TextType from '../components/TextType';
 
 function LandingPage () {

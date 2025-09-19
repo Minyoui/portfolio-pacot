@@ -54,8 +54,8 @@ function Contact () {
                             required
                             />
                             <button type='submit'>
-                                <img src={SendIcon} id="light"/>
-                                <img src={SendIconDark} id="dark"/>
+                                <img src={SendIcon} id="light" alt="Submit Button" aria-hidden="true"/>
+                                <img src={SendIconDark} id="dark" alt="Submit Button" aria-hidden="true"/>
                             </button>
                         </div>
                     </form>
