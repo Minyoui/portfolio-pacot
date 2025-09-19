@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import './skills.css';
 import { useDarkMode } from '../../context/DarkModeContext';
 
@@ -42,15 +41,15 @@ function Skills () {
                             <div className='line-left' />
                         </div>
                         <div className='development-icons'>
-                            <img src={React_Icon} id='light'/>
-                            <img src={HTML_Icon} id='light' />
-                            <img src={CSS_Icon} id='light' />
-                            <img src={JS_Icon} id='light' />
+                            <img src={React_Icon} id='light' alt="React" aria-hidden="true"/>
+                            <img src={HTML_Icon} id='light' alt="HTML5" aria-hidden="true"/>
+                            <img src={CSS_Icon} id='light' alt="CSS3" aria-hidden="true"/>
+                            <img src={JS_Icon} id='light' alt="JavaScript" aria-hidden="true"/>
 
-                            <img src={React_Icon_Dark} id='dark' />
-                            <img src={HTML_Icon_Dark} id='dark' />
-                            <img src={CSS_Icon_Dark} id='dark' />
-                            <img src={JS_Icon_Dark} id='dark' />
+                            <img src={React_Icon_Dark} id='dark' alt="React" aria-hidden="true"/>
+                            <img src={HTML_Icon_Dark} id='dark' alt="HTML5" aria-hidden="true"/>
+                            <img src={CSS_Icon_Dark} id='dark' alt="CSS3" aria-hidden="true"/>
+                            <img src={JS_Icon_Dark} id='dark' alt="JavaScript" aria-hidden="true"/>
                         </div>
                         <div className='dev-right'>
                             <br/>
@@ -68,15 +67,15 @@ function Skills () {
                             <div className='line-left' />
                         </div>
                         <div className='tools-icons'>
-                            <img src={VStudio} id='light' />
-                            <img src={Figma} id='light' />
-                            <img src={Canva} id='light' />
-                            <img src={Photoshop} id='light' />
+                            <img src={VStudio} id='light' alt="Visual Studio Code" aria-hidden="true"/>
+                            <img src={Figma} id='light' alt="Figma" aria-hidden="true"/>
+                            <img src={Canva} id='light' alt="Canva" aria-hidden="true"/>
+                            <img src={Photoshop} id='light' alt="Adobe Photoshop" aria-hidden="true"/>
 
-                            <img src={VStudioDark} id='dark' />
-                            <img src={FigmaDark} id='dark' />
-                            <img src={CanvaDark} id='dark' />
-                            <img src={PhotoshopDark} id='dark' />
+                            <img src={VStudioDark} id='dark' alt="Visual Studio Code" aria-hidden="true"/>
+                            <img src={FigmaDark} id='dark' alt="Figma" aria-hidden="true"/>
+                            <img src={CanvaDark} id='dark' alt="Canva" aria-hidden="true"/>
+                            <img src={PhotoshopDark} id='dark' alt="Adobe Photoshop" aria-hidden="true"/>
                         </div>
                         <div className='tools-right'>
                             <p>Visual Studio, Figma, Canva, Adobe Photoshop</p>

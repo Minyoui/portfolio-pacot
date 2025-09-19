@@ -1,8 +1,5 @@
 import './projects.css';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { useDarkMode } from '../../context/DarkModeContext';
-import MDThumbnail from '../../assets/Maison-D-thumbnail.png';
 
 function Projects () {
     const { darkMode } = useDarkMode();
@@ -36,10 +33,10 @@ function Projects () {
             <div className='project-wrapper' id="projects">
                 <div className={`projects-title ${darkMode? 'light' : 'dark'}`}>
                     <p>MY PROJECTS</p>
-                    
                 </div>
                 
                 <div className='projects-container'>
+                    
                     {projectsData.map((project) => (
                         <div className='project-box' id={project.id} key={project.id}>
                             <div className={`project-info ${darkMode? 'light' : 'dark'}`}>

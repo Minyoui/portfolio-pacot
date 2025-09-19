@@ -5,7 +5,6 @@ import MiniDarkLogo from '../../assets/pacot-logo.svg';
 import MiniLightLogo from '../../assets/pacot-logo-drk.svg';
 import DarkModeToggle from '../components/DarkModeToggle';
 import { useDarkMode } from '../../context/DarkModeContext';
-import MenuIcon from '../../assets/Menu.png';
 
 function Navbar () {
     const [ scrolled, setScrolled ]= useState(false);

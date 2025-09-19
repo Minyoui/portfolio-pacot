@@ -1,8 +1,6 @@
 import './landing.css';
 import { useDarkMode } from '../../context/DarkModeContext';
 import Model from '../../assets/Pacot.png';
-import DarkLogo from '../../assets/pacot-logo.svg';
-import LightLogo from '../../assets/pacot-logo-drk.svg';
 import TextType from '../components/TextType';
 
 function LandingPage () {
@@ -11,16 +9,19 @@ function LandingPage () {
     return (
         <>
             <div className={`landing-wrapper ${darkMode? 'light' : 'dark'}`} id='home'> 
-                <div className='landing-bg'>
+
+                <div className='landing-bg' aria-hidden="true">
                     <div className={`${darkMode? 'light' : 'dark'} side`}>
                         <div className='bg'/>
                     </div>
+
                     <div className={`${darkMode? 'dark' : 'light'} side`}>
                         <div className='bg'/>
                     </div>
                 </div>
+
                 <div className='landing-container'>
-                    <img src={Model}/>
+                    <img src={Model} alt="Evane Pacot Full Body Profile Picture" aria-hidden="true"/>
                     <div className='landing-title'>
                         <p className={`introduce-text ${darkMode? 'light' : 'dark'}`}>
                             Hi I am

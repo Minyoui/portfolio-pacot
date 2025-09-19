@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Antic&family=Antic+Didone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 * {
   margin: 0;
@@ -28,4 +24,13 @@ input, textarea {
   font-size: 16px;
   box-sizing: border-box;
   max-width: 100%;
+}
+
+button, a {
+  -webkit-tap-highlight-clor: transparent;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
 }

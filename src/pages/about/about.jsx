@@ -8,16 +8,9 @@ import PaintIconDark from '../../assets/Paint-dark.svg';
 import BoltIconDark from '../../assets/Bolt-dark.svg';
 
 import SpotlightCard from '../components/SpotlightCard';
-import DecryptedText from '../components/DecryptedText';
 
 function AboutPage () {
     const { darkMode } = useDarkMode();
-
-    const AboutText = [
-        {
-            text: "Hello"
-        }
-    ];
 
     return (
         <>
@@ -35,8 +28,8 @@ function AboutPage () {
                     <SpotlightCard 
                         className={`phase-box ${darkMode? 'light' : 'dark'}`}
                         spotlightColor='rgba(254, 252, 113, 0.8)'>
-                        <img src={EditIcon} alt='Edit' id='icon-light'/>
-                        <img src={EditIconDark} alt='Edit' id='icon-dark'/>
+                        <img src={EditIcon} alt='Edit' id='icon-light' aria-hidden="true"/>
+                        <img src={EditIconDark} alt='Edit' id='icon-dark' aria-hidden="true"/>
                         <h2>UI & UX</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -45,8 +38,8 @@ function AboutPage () {
                     <SpotlightCard 
                         className={`phase-box ${darkMode? 'light' : 'dark'}`}
                         spotlightColor='rgba(18, 176, 224, 0.8)'>
-                        <img src={PaintIcon} alt='Paint' id='icon-light'/>
-                        <img src={PaintIconDark} alt='Paint' id='icon-dark'/>
+                        <img src={PaintIcon} alt='Paint' id='icon-light' aria-hidden="true"/>
+                        <img src={PaintIconDark} alt='Paint' id='icon-dark' aria-hidden="true"/>
                         <h2>Design & Creative</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -55,8 +48,8 @@ function AboutPage () {
                     <SpotlightCard 
                         className={`phase-box ${darkMode? 'light' : 'dark'}`} 
                         spotlightColor="rgba(224, 45, 18, 0.8)">
-                        <img src={BoltIcon} alt='Bolt' id='icon-light'/>
-                        <img src={BoltIconDark} alt='Bolt' id='icon-dark'/>
+                        <img src={BoltIcon} alt='Bolt' id='icon-light' aria-hidden="true"/>
+                        <img src={BoltIconDark} alt='Bolt' id='icon-dark' aria-hidden="true"/>
                         <h2>Development</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

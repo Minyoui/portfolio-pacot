@@ -16,8 +16,8 @@ function Footer () {
         <>
             <footer className={`footer-wrapper ${darkMode? 'light' : 'dark'}`}>
                 <a href="#home" className='footer-logo'>
-                    <img src={Logo} alt="logo" id='light'/>
-                    <img src={LogoDark} alt="logo" id='dark'/>
+                    <img src={Logo} alt="Pacot Evane Logo" id='light'/>
+                    <img src={LogoDark} alt="Pacot Evane Logo" id='dark'/>
                 </a>
                 <div className='social-media-links'>
                     <a href="https://ph.jobstreet.com/profile/evane-pacot-r8yGs9PNjJ" target="_blank">

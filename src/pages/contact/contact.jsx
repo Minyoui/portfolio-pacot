@@ -19,20 +19,20 @@ function Contact () {
                     <div className='contact-info'>
                         {/* PHONE */}
                         <div className={`phone ${darkMode? 'light' : 'dark'}`}>
-                            <img src={PhoneIcon} alt='Phone' id='light'/>
-                            <img src={PhoneIconDark} alt='Phone' id='dark'/>
+                            <img src={PhoneIcon} alt='Phone' id='light' aria-hidden="true"/>
+                            <img src={PhoneIconDark} alt='Phone' id='dark' aria-hidden="true"/>
                             <p>(+63) 947-631-8165</p>
                         </div>
                         {/* EMAIL */}
                         <div className={`email ${darkMode? 'light' : 'dark'}`}>
-                            <img src={EmailIcon} alt='Email' id='light'/>
-                            <img src={EmailIconDark} alt='Email' id='dark'/>
+                            <img src={EmailIcon} alt='Email' id='light' aria-hidden="true"/>
+                            <img src={EmailIconDark} alt='Email' id='dark' aria-hidden="true"/>
                             <p>evanepacot2002@gmail.com</p>
                         </div>
                         {/* ADDRESS */}
                         <div className={`address ${darkMode? 'light' : 'dark'}`}>
-                            <img src={AddressIcon} alt='Address' id='light'/>
-                            <img src={AddressIconDark} alt='Address' id='dark'/>
+                            <img src={AddressIcon} alt='Address' id='light' aria-hidden="true"/>
+                            <img src={AddressIconDark} alt='Address' id='dark' aria-hidden="true"/>
                             <p>Imus City, Cavite</p>
                         </div>
                     </div>
